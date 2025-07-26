@@ -52,7 +52,7 @@ Nossa intenção é transmitir conhecimento da melhor forma possível e sua opin
 
 # O que é IA
 
-Área da computação focada em desenvolvar algoritmos e sistemas que permitem máquinas performarem tarefas que tipicamente exigem inteligência humana como aprendizado, raciocínio e tomada de decisão.
+Área da computação focada em desenvolver algoritmos e sistemas que permitem máquinas performarem tarefas que tipicamente exigem inteligência humana como aprendizado, raciocínio e tomada de decisão.
 
 ---
 
@@ -276,4 +276,4 @@ Use com sabedoria
 
 # Obrigado
 
-![](qrcode.png)
+![width:500px](qrcode.png)
