@@ -8,7 +8,7 @@ use function Codewithkyrian\Transformers\Pipelines\pipeline;
 
 Transformers::setup()->setImageDriver(ImageDriver::VIPS);
 
-$tarefa = pipeline('image-to-text');
-$resultado = $tarefa('eu.jpg');
+$task = pipeline('image-to-text');
+$result = $task('eu.jpg');
 
-var_dump($resultado);
+var_dump($result);

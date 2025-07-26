@@ -12,16 +12,17 @@ Transformers::setup()
 	->setImageDriver(ImageDriver::VIPS)
 	->setAuthToken('');
 
-$model = AutoModel::fromPretrained('briaai/RMBG-2.0');
+$model = @AutoModel::fromPretrained('briaai/RMBG-2.0');
 $processor = AutoProcessor::fromPretrained('briaai/RMBG-2.0');
 
 $image = Image::read(__DIR__ . '/eu.jpg');
-$saida = $model($processor($image));
+$output = $model($processor($image));
 
-['alphas' => $outputPixels] = $saida;
+['alphas' => $outputPixels] = $output;
 $whitePixels = $outputPixels[0]->multiply(255);
 $mask = Image::fromTensor($whitePixels)
 	->resize($image->width(), $image->height());
 
+$mask->save(__DIR__ . '/mask.png');
 $maskedImage = $image->applyMask($mask);
 $maskedImage->save(__DIR__ . '/transparente.png');
