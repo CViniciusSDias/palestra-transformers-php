@@ -34,7 +34,7 @@ keywords: ["Vinicius Dias", "Dias de Dev", "cviniciussdias", "IA", "Inteligênci
 - Canal Dias de Dev no YouTube
 
 ## Links
-![width:30px](linkedin-83.svg) ![width:30px](https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg)@cviniciussdias
+![width:30px](imagens/linkedin-83.svg) ![width:30px](https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg)@cviniciussdias
 
 https://dias.dev/
 https://youtube.com/@DiasDeDev
@@ -46,7 +46,7 @@ https://youtube.com/@DiasDeDev
 Nenhuma apresentação é perfeita e nós que criamos conteúdo sabemos disso.
 Nossa intenção é transmitir conhecimento da melhor forma possível e sua opinião é muito importante para isso.
 
-![QR Code](qrcode.png)
+![QR Code](imagens/qrcode.png)
 
 ---
 
@@ -76,13 +76,13 @@ Nossa intenção é transmitir conhecimento da melhor forma possível e sua opin
 
 # IA com PHP
 
-![](ia-com-php.png)
+![](imagens/ia-com-php.png)
 
 ---
 
 # Transformers
 
-![height:14cm](foto-bumblebee.jpeg)
+![height:14cm](imagens/foto-bumblebee.jpeg)
 
 ---
 
@@ -198,7 +198,7 @@ $resultado = $tarefa('imagem.jpg');
 # Encontrando modelos
 
 ## Hugging Face
-![width:400px](huggingface_logo-noborder.svg)
+![width:400px](imagens/huggingface_logo-noborder.svg)
 
 ---
 
@@ -276,4 +276,4 @@ Use com sabedoria
 
 # Obrigado
 
-![width:500px](qrcode.png)
+![width:500px](imagens/qrcode.png)
