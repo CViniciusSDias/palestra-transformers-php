@@ -107,7 +107,7 @@ Transformers are a type of deep learning model architecture designed to process 
 
 - PHP 8.1+
 - Composer
-- Extensão FFI
+- FFI Extension
 - JIT (optional, for performance)
 - Increased memory limit
 
@@ -331,13 +331,13 @@ $output = $model($processor($image));
 # Removing image's Background
 
 ```php
-['alphas' => $outputPixels] = $output;
-$whitePixels = $outputPixels[0]->multiply(255);
-$mask = Image::fromTensor($whitePixels)
+['alphas' => $alphas] = $output;
+$alphaMaskTensor = $alphas[0]->multiply(255);
+$mask = Image::fromTensor($alphaMaskTensor)
 	->resize($image->width(), $image->height());
 
 $maskedImage = $image->applyMask($mask);
-$maskedImage->save(__DIR__ . '/transparent.png');
+$maskedImage->save(__DIR__ . '/transparente.png');
 ```
 
 ---
