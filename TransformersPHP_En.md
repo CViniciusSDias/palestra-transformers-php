@@ -4,7 +4,7 @@ theme: default
 lang: en
 title: "Executing pretrained models with TransformersPHP"
 author: "Vinicius Dias"
-keywords: ["Vinicius Dias", "Dias de Dev", "cviniciussdias", "IA", "Inteligência Artificial", "Transformers", "TransformersPHP", "HuggingFace"]
+keywords: ["Vinicius Dias", "Dias de Dev", "cviniciussdias", "AI", "Artificial Intelligence", "Transformers", "TransformersPHP", "HuggingFace"]
 ---
 <style>
     p:has(img) {
@@ -347,6 +347,16 @@ $maskedImage->save(__DIR__ . '/transparente.png');
 Still unstable, and has room for performance improvements.
 
 Use with caution.
+
+---
+
+# Other AI tools for PHP
+
+- [RubixML](https://rubixml.github.io/ML)
+- [FANN](https://www.php.net/manual/en/book.fann.php)
+- [Whisper.PHP](https://github.com/CodeWithKyrian/whisper.php)
+- [ONNX Runtime](https://github.com/ankane/onnxruntime-php)
+- [ORT (Oh Really, Tensors?)](https://github.com/krakjoe/ort)
 
 ---
 
