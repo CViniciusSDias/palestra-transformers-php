@@ -14,7 +14,6 @@ keywords: ["Vinicius Dias", "Dias de Dev", "cviniciussdias", "AI", "Artificial I
 
 # TransformersPHP
 ## Executing pretrained AI models with PHP
-
 <!--
 ---
 
@@ -362,4 +361,3 @@ Use with caution.
 
 # Thank you
 
-![width:500px](imagens/qrcode.png)

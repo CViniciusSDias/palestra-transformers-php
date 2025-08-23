@@ -52,7 +52,9 @@ Nossa intenção é transmitir conhecimento da melhor forma possível e sua opin
 
 # O que é IA
 
-Área da computação focada em desenvolver algoritmos e sistemas que permitem máquinas performarem tarefas que tipicamente exigem inteligência humana como aprendizado, raciocínio e tomada de decisão.
+Resposta gerada por IA:
+
+> É a área da computação que busca criar sistemas capazes de executar tarefas que normalmente exigiriam inteligência humana, como raciocinar, aprender, tomar decisões, reconhecer padrões, entender linguagem e até criar conteúdos.
 
 ---
 
@@ -88,7 +90,7 @@ Nossa intenção é transmitir conhecimento da melhor forma possível e sua opin
 
 # Transformers
 
-Tipo de arquitetura de redes neurais criada para processamento de dados sequenciais.
+Tipo de arquitetura de redes neurais criada para processamento de dados sequenciais, usada em diversos sistemas modernos de IA.
 
 ---
 
@@ -211,17 +213,80 @@ $resultado = $tarefa('imagem.jpg');
 
 # Limitações
 
-Pipelines não podem fazer tudo por nós
+## Número reduzido de modelos que atendem o filtro
 
 ---
 
-# Modelos não suportados
+# Tarefa de NER em Português
 
-## AutoModel
+![](imagens/hugging-face-screenshot.png)
+
+---
+
+# Tarefa de NER em Português
+
+![](imagens/ner-error-screenshot.png)
+
+---
+
+# Solução
+
+## Converter modelos para ONNX
+
+---
+
+# Converter modelos para ONNX
+
+- tf2onnx
+- Script convert.py do Transformers.js
+- Um pouco de Python e ajuda de LLMs
+
+---
+
+# Converter modelos para ONNX
+
+- tf2onnx
+- Script convert.py do Transformers.js
+- **Um pouco de Python e ajuda de LLMs**
+
+---
+
+# Tarefa de NER em Português
 
 ```php
-$model = AutoModel::fromPretrained('briaai/RMBG-2.0');
+<?php
+
+$ner = pipeline(
+    'ner',
+    modelName: 'cviniciussdias/wikineural-multilingual-ner',
+    quantized: false
+);
+$output = $ner('...');
+
+var_dump($output);
 ```
+
+---
+
+# Limitação
+
+## Pipelines não podem fazer tudo por nós
+
+---
+
+# O que é uma pipeline?
+
+Um conjunto de instruções para:
+
+1. Pré-processar a entrada
+2. Executar o modelo
+3. Pós-processar a saída
+
+---
+
+# Solução
+
+## AutoProcessor + AutoModel + Bom e velho PHP
 
 ---
 
@@ -231,6 +296,16 @@ $model = AutoModel::fromPretrained('briaai/RMBG-2.0');
 
 ```php
 $processor = AutoProcessor::fromPretrained('briaai/RMBG-2.0');
+```
+
+---
+
+# Modelos não suportados
+
+## AutoModel
+
+```php
+$model = AutoModel::fromPretrained('briaai/RMBG-2.0');
 ```
 
 ---
@@ -271,6 +346,16 @@ $maskedImage->save(__DIR__ . '/transparente.png');
 Ferramenta ainda instável, com bugs e performance aquém do ideal.
 
 Use com sabedoria
+
+---
+
+# Outras ferramentas de IA para PHP
+
+- [RubixML](https://rubixml.github.io/ML)
+- [FANN](https://www.php.net/manual/en/book.fann.php)
+- [Whisper.PHP](https://github.com/CodeWithKyrian/whisper.php)
+- [ONNX Runtime](https://github.com/ankane/onnxruntime-php)
+- [ORT (Oh Really, Tensors?)](https://github.com/krakjoe/ort)
 
 ---
 
